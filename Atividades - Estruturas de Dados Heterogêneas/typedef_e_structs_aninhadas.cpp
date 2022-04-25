@@ -1,7 +1,7 @@
 // Programa Ficha do Aluno
 
-// Declaração de Biblioteca
-#include <stdio.h> // Funções de I/O nos dispositivos stdin, stout e files.
+// DeclaraÃ§Ã£o de Biblioteca
+#include <stdio.h> // FunÃ§Ãµes de I/O nos dispositivos stdin, stout e files.
 #include <stdlib.h>
 
 
@@ -11,10 +11,10 @@ int main(void)
 //char nome[50];
 //float nota;
 
-//float vnotas[20]; // vetor de 20 posições
+//float vnotas[20]; // vetor de 20 posiÃ§Ãµes
 //float mnotas[10][2]; // matriz de 10 linhas e 2 colunas
 
-//Declaração da struct
+//DeclaraÃ§Ã£o da struct
 // struct <identificador>
 // {
 // <listagem dos tipos e menbros>;
@@ -48,15 +48,15 @@ struct ficha_aluno
 	endereco endaluno;
 };
 
-//Declaração da variável aluno do tipo struct ficha_aluno.
+//DeclaraÃ§Ã£o da variÃ¡vel aluno do tipo struct ficha_aluno.
 // vetor de struct de 2 posicoes
 struct ficha_aluno aluno[2];
 
 int i;
 
 
-// Função printf - impressão em tela
-// Função scanf - leitura de dados do teclado
+// FunÃ§Ã£o printf - impressÃ£o em tela
+// FunÃ§Ã£o scanf - leitura de dados do teclado
 
 printf("\n Ficha do Aluno \n");
 
@@ -68,19 +68,19 @@ for (i=0; i<2; i++)
 	printf("Nome do aluno: ");
 	scanf("%s", &aluno[i].nome);
 
-	printf("Informe o endereço do aluno (Rua): ");
+	printf("Informe o endereÃ§o do aluno (Rua): ");
 	scanf("%s", &aluno[i].endaluno.rua);
 	
-	printf("Informe o endereço do aluno (Numero): ");
+	printf("Informe o endereÃ§o do aluno (Numero): ");
 	scanf("%d", &aluno[i].endaluno.numero);
 	
-	printf("Informe o endereço do aluno (Bairro): ");
+	printf("Informe o endereÃ§o do aluno (Bairro): ");
 	scanf("%s", &aluno[i].endaluno.bairro);
 	
-	printf("Informe o endereço do aluno (Cidade): ");
+	printf("Informe o endereÃ§o do aluno (Cidade): ");
 	scanf("%s", &aluno[i].endaluno.cidade);
 	
-	printf("Informe o endereço do aluno (CEP): ");
+	printf("Informe o endereÃ§o do aluno (CEP): ");
 	scanf("%d", &aluno[i].endaluno.cep);
 	
 	printf("Informe a data de nascimento do aluno (Dia): ");
